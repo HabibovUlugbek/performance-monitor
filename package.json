@@ -7,14 +7,14 @@
     "curl:post": "curl -X POST \"localhost:3000/people\" --data '{\"name\": \"habibov\"}'",
     "curl:get": "curl \"localhost:3000/people\"",
     "loadtest:get": "autocannon -d 30 localhost:3000/people",
-    "loadtest:post": "autocannon -m POST -d 30 --body '{\"erick\": 1}' localhost:3000/people ",
+    "loadtest:post": "autocannon -m POST -d 30 --body '{\"habibov\": 1}' localhost:3000/people ",
     "loadtest:concurrently": "concurrently \"npm run loadtest:get\" \"npm run loadtest:post\" ",
     "start": "npx babel-node src/index.js",
     "start:dev": "npx nodemon --exec npm start",
     "start:noui": "UI_DISABLED=true npx babel-node index.js"
   },
   "keywords": [],
-  "author": "erickwendel",
+  "author": "habibov",
   "license": "ISC",
   "devDependencies": {
     "autocannon": "7.9.0",
